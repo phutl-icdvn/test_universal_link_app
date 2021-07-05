@@ -11,6 +11,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './apple-app-site-association'));
 })
 
-app.listen(port, () => {
+app.listen(process.env.PORT ||port, () => {
   console.log(`Example app listening at  shttp://localhost:${port}`)
 })
