@@ -7,7 +7,7 @@ const port = 3000
 var appleAppSiteAssociationContents = fs.readFileSync(path.resolve(__dirname, './apple-app-site-association'), 'utf8');
 
 app.get('/', (req, res) => {
-    res.set('Content-Type', 'application/json');
+    res.set('Content-Type', 'application/pkcs7-mime');
     res.sendFile(path.resolve(__dirname, './apple-app-site-association'));
 })
 
