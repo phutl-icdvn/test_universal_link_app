@@ -8,7 +8,7 @@ var appleAppSiteAssociationContents = fs.readFileSync(path.resolve(__dirname, '.
 
 app.get('/', (req, res) => {
     res.set('Content-Type', 'application/json');
-    res.sendFile(path.resolve(__dirname, './apple-app-site-association'));
+    res.send(path.resolve(__dirname, './apple-app-site-association'));
 })
 
 app.listen(process.env.PORT ||port, () => {
