@@ -1,11 +1,9 @@
 {
-    "applinks": {
-        "apps": [],
-        "details": [
-            {
-                "appID": "46UMBACQ4A.jp.co.mobilelifejapan.jimoho",
-                "paths": [ "*"]
-            }
-        ]
-    }
+	"applinks": {
+		"apps": [],
+		"details": [{
+			"appID": "46UMBACQ4A.jp.co.mobilelifejapan.jimoho",
+			"paths": ["*"]
+		}]
+	}
 }
