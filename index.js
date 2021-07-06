@@ -10,6 +10,10 @@ app.get('/.well-known/apple-app-site-association', function(req, res, next) {
      res.status(200).send(aasa);
 });
 
+app.get('/',function(req, res, next){
+  res.status(200).send("Hello world");
+})
+
 app.listen(process.env.PORT ||port, () => {
   console.log(`Example app listensing at  shttp://localhost:${port}`)
 })
