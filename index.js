@@ -4,8 +4,7 @@ const app = express()
 const path = require('path')
 const port = 3000
 
-// var aasa = fs.readFileSync(__dirname + '/.well-known/apple-app-site-association');
-var aasa = 1234;
+var aasa = fs.readFileSync(__dirname + '/.well-known/apple-app-site-association');
 app.get('/.well-known/apple-app-site-association', function(req, res, next) {
      res.set('Content-Type', 'application/pkcs7-mime');
      res.status(200).send(aasa);
