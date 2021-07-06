@@ -1,18 +1,9 @@
 {
-  "applinks": {
-      "details": [
-           {
-             "appIDs": [ "46UMBACQ4A.jp.co.mobilelifejapan.jimoho"],
-             "components": [
-               {
-                  "/": "/",
-                  "comment": "Matches any URL whose path starts with /buy/"
-               },
-             ]
-           }
-       ]
-   },
-   "webcredentials": {
-      "apps": [ "46UMBACQ4A.jp.co.mobilelifejapan.jimoho" ]
-   }
+	"applinks": {
+		"apps": [],
+		"details": [{
+			"appID": "46UMBACQ4A.jp.co.mobilelifejapan.jimoho",
+			"paths": ["*","/test/*"]
+		}]
+	}
 }
